@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quantum Logic 2024-2025</title>    
+
+  <meta name="description" content="QL  website">
+  <meta name="keywords" content="Quantum computing, process calculi, Logic">
+  <meta name="author" content="Luís Soares Barbosa" >
+<!--  <base href="http://ac1516.proenca.org/" target="_parent" /> -->
+  
+<!--  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+  <link href="extra/css/bootstrap-bw.min.css" rel="stylesheet" media="screen">
+  <link href="extra/css/main.css" rel="stylesheet">
+
+  <!-- see more examples in http://bootswatch.com/paper/# -->
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+<!--     AC -->
+    </a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav" id="myTab">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#programa">Syllabus</a></li>
+      <li><a href="#material">Support</a></li>
+      <li><a href="#funcionamento">Pragmatics</a></li>
+    </ul>
+  </div>
+</div>
+
+
+ 
+<div class="splash">
+  <h2 class="splash-title">Quantum Logic 2024-25</h2>
+<!--  <div class="blue-rect"> 
+-->
+  <h4 class="splash-subtitle">MEF - MSc in Physics Engineering </h4>
+  <h4 class="splash-subtitle"> Dep. Informática, Universidade do Minho</h4>
+  </div>
+
+
+<div id="myTabContent" class="container">
+<div class="bs-component">
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Objectives and learning outcomes</h2>
+
+<p>
+The development of quantum information and computation entails the need for  formal tools to model, verify and reason rigorously about quantum programs. This course explores 
+<ul>
+  <li>
+    a brief introduction to category theory as a suitable mathematical framework to reason about the semantics of programs;
+  <li>
+    a language of string-diagrams, with a precise categorical semantics,  to express basic principles of quantum processes;
+  <li>
+    a particular set of string-diagram equations, called the ZX-calculus, to reason and transform quantum circuits at a higher level of abstraction;
+   <li>
+   a Python library, called PyZX, to play with ZX-calculus in practice.
+
+<!-- the connection between (quantum) computation, (resource-sensitive) logic, and category theory, given by the Curry-Howard-Lambek correspondence, which identifies propositions with types and proofs with programs, and formalizes program semantics as a (monoidal) category; </li>
+  <li>
+ the specification of quantum algoritms and protocols in the (diagramatic) language of monoidal categories.  </li>
+ -->
+</ul>
+
+Thus, in the end, students will be able to apply to the development of quantum programs a solid and operative knowledge in
+program semantics and calculi.
+
+<p>
+
+
+<!--<h2>NEW: List of Research Exercises</h2>
+
+All information available <a href="http://arca.di.uminho.pt/quantum-logic-2122/TP-21-22">HERE</a>
+-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="programa"></div>
+<h2>Syllabus</h2>
+
+<ul>
+<li> <strong>Module 1: A brief introduction to category theory. </strong>
+<ul>
+  <li> What is a category and why we care: definitions, examples, basic constructions.
+  <li> Functors and natural transformations.
+  <li> Basic constructions in a category: duality and universality.
+   <li> Monads and adjunctions. 
+</ul> 
+ <li> <strong> Module 2: A diagrammatical approach to quantum processes </strong>
+  <ul>
+  <li> Monoidal categories and string-diagrams. 
+  <li> Computational interpretation of quantum mechanics.  Associated categorical structures: monoidal (composition), compact closed (entanglement), adjunctions (internal product), biproduts (non deterministic branching).
+  <li> Linear processes.
+  <li> Quantum processes.
+</ul> 
+<li> <strong> Module 3: A hands-on introduction to the ZX-calculus </strong>
+  <ul>
+  <li> The ZX-calculus.
+  <li> Using PyZX.
+  <li> Examples and case studies.
+</ul> 
+</ul>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="material"></div>
+<h2>Summaries (2024-25)</h2>
+
+<h5> T Lectures</h5>
+
+<table style="width:100%">
+        <tr>
+          <td><strong>Feb 07 (13:00 - 15:00)</strong></td>
+          <td>Introduction to the course: motivation, objectives, learning outcomes, organisation. Introduction to the notion of a category and its relevance for Computer Science. Basic defintions and examples.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Feb 14 (14:00 - 15:00)</strong></td>
+          <td> 
+            Functors: definition, relevance and properties. Preservation and reflection of properties along a functor.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Feb 21 (14:00 - 15:00)</strong></td>
+          <td> 
+            Introduction to universal properties. Initial and final object. Notion of product and coproduct. Examples.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Feb 21 (14:00 - 15:00)</strong></td>
+          <td> 
+            Product and coproduct: basic definitions and examples. 
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Feb 28 (14:00 - 15:00)</strong></td>
+          <td> 
+            Product and coproduct:  properties and their derivation. Examples.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Mar 7 (14:00 - 15:00)</strong></td>
+          <td> 
+            Natural transformations. Parametricity. Examples. 
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Mar 21 (14:00 - 15:00)</strong></td>
+          <td> 
+            Diagramatic languages for processes and diagrammatic reasoning. Relationship with monoidal categories. Circuits. States, effects and numbers. Examples.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 4 (14:00 - 15:00)</strong></td>
+          <td> 
+            String diagrams. Notions of transpose, adjoint, conjugate and inner product. Examples. Properties. 
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 24 (09:00 - 13:00)</strong></td>
+          <td> 
+            A tutorial on Perceval (invited lecturer Daphne Wang, Quandela).<P>
+              [Substitution for lectures T 28 Mar and 11 Apr]
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 30 (09:00 - 11:00)</strong></td>
+          <td> 
+            String diagrams (cont.): Unitary and positive porcesses. Projectors. Expressing quantum phenomena in string diagrams (no cloning; teleportation). Compact closed dagger categories. 
+            </td>
+        </tr>
+        <tr>
+          <td><strong>May 02 (13:00 - 15:00)</strong></td>
+          <td> 
+            Introducing basis and sums in string diagrams. Matrices. A process theory of linear maps. Compact closed dagger categories enriched over a commutative monoid.
+            </td>
+        </tr>
+               <tr>
+          <td><strong>May 09 (13:00 - 15:00)</strong></td>
+          <td> 
+            From linear to pure quantum processes. The doubling effect.
+            </td>
+        </tr>
+
+
+<!--        <tr>
+          <td><strong>Apr 2 (11:00 - 13:00)</strong></td>
+          <td>Linear and quantum lambda-calculi and monoidal categories: linear and quantum lambda-calculi; symmetric monoidal closed categories; categorical semantics of linear and quantum lambda-calculi.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 9 (11:00 - 13:00)</strong></td>
+          <td>Linear and quantum lambda-calculi and monoidal categories: conclusion of the previous lecture. Closing of the course Module 1.
+            </td>
+        </tr>
+       <tr>
+          <td><strong>Apr 16 (11:00 - 13:00)</strong></td>
+          <td>Introduction to module 2. Diagrams and categories. Diagramatic languages for processes.
+              Circuits <a href="LQ2324-Diagrams.pdf"> [lecture notes]</a>.
+              String diagrams: definitions, examples, constructions <a href="LQ2324-StringDiagrams.pdf"> [lecture notes]</a>.
+            </td>
+        </tr>
+              <tr>
+          <td><strong>Apr 24 (16:00 - 18:00)</strong></td>
+          <td>The process theory of linear maps. Matricial representation. Completeness for string diagrams. <a href="LQ2324-LinearProcesses.pdf"> [lecture notes] </a>.(Room DI 1.20)
+            </td>
+        </tr>
+            <tr>
+          <td><strong>Apr 30 (11:00 - 11:00)</strong></td>
+          <td>The process theory of pure quantum maps. Doubling to retrieve probabilities as scalars and get rid of global phases. <a href="LQ2324-PureQuantumProcesses.pdf"> [lecture notes] </a>.
+            </td>
+        </tr>
+           <tr>
+          <td><strong>May 14 (11:00 - 11:00)</strong></td>
+          <td>Quantum processes: adding discarding and non determinism. <a href="LQ2324-QuantumProcesses.pdf"> [lecture notes] </a>.
+            </td>
+        </tr>
+        ~-->
+    </table>
+
+<P>
+
+<h5> TP Lectures </h5>
+
+
+<table style="width:100%">
+        <tr>
+          <td><strong>Feb 12 (09:00 - 11:00)</strong></td>
+          <td> Examples of categories. Iso(morphisms), mono(morphisms) and epis(morphisms) and their properties.
+          Examples of dual and skeleton categories; notion of subcategory. A graphical notation for categories.</td>
+        </tr>
+        
+        <tr>
+          <td><strong>Feb 19 (09:00 - 11:00)</strong></td>
+          <td>
+            Functors: examples; properties; exercises.
+            </td>
+        </tr>
+
+	<tr>
+          <td><strong>Feb 26 (09:00 - 11:00)</strong></td>
+          <td>
+            Introduction to ZX-Calculus
+            </td>
+        </tr>
+
+	<tr>
+          <td><strong>Mar 5 (09:00 - 11:00)</strong></td>
+          <td>
+            Rules of ZX-Calculus
+            </td>
+        </tr>
+
+	<tr>
+          <td><strong>Mar 12 (09:00 - 11:00)</strong></td>
+          <td>
+            Rules of ZX-Calculus (exercises)
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>Mar 14 (09:00 - 11:00)</strong></td>
+          <td>
+            Evaluation in the ZX-Calculus 
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>Mar 19 (09:00 - 11:00)</strong></td>
+          <td>
+            Introduction to ZXlive
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>Mar 26 (09:00 - 11:00)</strong></td>
+          <td>
+            CNOT circuits and parity matrices;
+	    Exercises on ZXlive 
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>Apr 2 (09:00 - 11:00)</strong></td>
+          <td>
+            Phase-free ZX;
+	    Exercises on ZXlive 
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>Apr 9 (09:00 - 11:00)</strong></td>
+          <td>
+            Clifford Circuits and Clifford ZX-diagrams;
+	    Exercises on ZXlive 
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>Apr 23 (09:00 - 11:00)</strong></td>
+          <td>
+            Evaluation ZXlive 
+          </td>
+        </tr>
+
+	<tr>
+          <td><strong>May 7 (09:00 - 11:00)</strong></td>
+          <td>
+            Evaluation PyZX 
+          </td>
+        </tr>
+        <!--
+        <tr>
+          <td><strong>Feb 20 (09:00 - 11:00)</strong></td>
+          <td>Intuitionistic logic: how to write proofs in natural deduction; how to show the admissibility of a rule.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Feb 27 (09:00 - 11:00)</strong></td>
+          <td>Untyped lambda-calculus: how to check if an expression is (not) a term; how to execute alpha-conversion and
+beta-reduction.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Mar 5 (09:00 - 11:00)</strong></td>
+          <td>Simply-typed lambda-calculus: how to construct a term; how to execute beta- and eta-reductions.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Mar 12 (09:00 - 11:00)</strong></td>
+          <td>Category theory: how to prove that a concrete structure is a category; how to show that initial and
+terminal objects as well as products are unique.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Mar 19 (09:00 - 11:00)</strong></td>
+          <td>Category theory (continued), categorical logic and intuitionistic linear logic: how to interpret some concrete terms; how to prove that a concrete structure is an adjoint; how to prove that exponents are right adjoints to products.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 2 (09:00 - 11:00)</strong></td>
+          <td>Linear and quantum lambda-calculi and monoidal categories: how to write examples of linear and quantum terms; how to interpret examples of linear and quantum terms; how to prove an instance of a coherence theorem for monoidal categories.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 9 (09:00 - 11:00)</strong></td>
+          <td>Linear and quantum lambda-calculi and monoidal categories: conclusion of the previous lecture.
+            </td>
+        </tr>
+        <tr>
+          <td><strong>Apr 16 (09:00 - 11:00)</strong></td>
+          <td>Exercises on circuits and string diagrams.
+            </td>
+        </tr>
+             <tr>
+          <td><strong>Apr 23 (09:00 - 11:00)</strong></td>
+          <td>The ZX calculus <a href="https://arxiv.org/abs/2012.13966"> [Wetering, 2020] </a>
+            </td>
+        </tr>
+         <tr>
+          <td><strong>Apr 30 (09:00 - 11:00)</strong></td>
+          <td>Exercises with linear maps </a>
+            </td>
+        </tr>
+        <tr>
+          <td><strong>May 14 (09:00 - 11:00)</strong></td>
+          <td>Exercises. Project review. </a>
+            </td>
+        </tr>
+        -->
+    </table>
+
+
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="material"></div>
+<h2>Support</h2>
+
+
+<h5> Lecture Notes / Exercises</h5>
+<ul> 
+<li ><a href="LQ-Lec1.pdf">
+    Lecture 1: Categories </a> 
+</li>
+<li ><a href="LQ-Lec2.pdf">
+    Lecture 2: Functors </a> 
+</li>
+
+<li ><a href="LQ-Lec3.pdf">
+    Lecture 3: Universal properties </a> 
+</li>
+<li ><a href="LQ-Lec4.pdf">
+    Lecture 4: Naturality </a> 
+</li>
+<li ><a href="LQ2425-Diagrams.pdf">
+    Lecture 5: Diagrams and monoidal categories </a> 
+</li>
+<li ><a href="LQ2425-StringDiagrams.pdf">
+    Lecture 6: String diagrams and dagger categories </a> 
+</li>
+<li ><a href="LQ2425-LinearProcesses.pdf">
+    Lecture 7: A process theory of linear maps </a> 
+</li>
+<li ><a href="LQ2425-PureQuantumProcesses.pdf">
+    Lecture 8: A process theory for pure quantum maps </a> 
+</li>
+<li ><a href="LQ2425-QuantumProcesses.pdf">
+    Extra Lecture: A theory of quantum processes </a> 
+</li>
+<!--
+<li ><a href="LQ-Processes1.pdf">
+    Lecture 5: Diagrams, processes and monoidal categories </a> 
+</li>
+ <li ><a href="LQ-Processes2.pdf">
+    Lecture 6: String diagrams and dagger categories - I </a> 
+</li>
+
+<li ><a href="LQ-Processes3.pdf">
+    Lecture 7: String diagrams and dagger categories - II </a> 
+</li>
+<li ><a href="LQ-Processes4.pdf">
+    Lecture 8: A process theory for linear maps </a> 
+</li>
+<li ><a href="LQ-Processes5.pdf">
+    Lecture 9: A process theory for pure quantum maps </a> 
+</li>
+<li ><a href="LQ-CHL1.pdf">
+    Lecture 10: Untyped lambda calculus </a> 
+</li>
+<li ><a href="LQ-CHL2.pdf">
+    Lecture 11: An introduction to intuitionistic logic </a> 
+</li>
+<li ><a href="LQ-CHL3.pdf">
+    Lecture 12: Simply typed lambda calculus </a> 
+</li>
+<li ><a href="LQ-CHL4.pdf">
+    Lecture 13: The Curry-Howard-Lambek correspondence for classical computation </a> 
+</li>
+<li ><a href="LQ-CHL5.pdf">
+    Lecture 14: The quantum lambda calculus and the Curry-Howard-Lambek correspondence for quantum  computation </a> 
+</li>
+
+-->
+
+</ul>
+
+
+<h5> Bibliography </h5>
+<ul>
+<li>
+B. Coecke and A. Kissinger. <strong> Picturing Quantum Processes: A First Course in Quantum
+Theory and Diagrammatic Reasoning </strong>. Cambridge University Press, 2017.
+</li>
+<li>
+A. Kissinger and J. van de Wetering. <strong> Picturing Quantum Software: An Introduction to ZX calculus and Quantum Compilation</strong>.  2024.
+</li>
+
+</ul>
+
+
+
+<h5> Complementary Bibliography </h5>
+<ul>
+
+<li>
+C. Heunen and J. Vicary. <strong> Categories for Quantum Theory</strong>. Oxford Graduate Texts in Mathematics, 2019.
+</li>
+<li>
+S. Awodey. <strong> Category Theory</strong>. Oxford Logic Guides. Oxford University Press, 2006.
+</li>
+<li>
+Emily Riehl. <strong> Category Theory in Context</strong>. Aurora - Dover Modern Math Originals, 2019.
+</li>
+<li>
+S. Abramsky and B. Coecke. <strong> Categorical quantum mechanics</strong>. In Kurt Engesser, Dov Gabbay,
+and Daniel Lehmann, editors, Handbook of Quantum Logic and Quantum Structures,
+pages 261–324. North-Holland, Elsevier, 2011.
+</li>
+<li>
+J. Baez and M. Stay. <strong> Physics, topology, logic and computation: A Rosetta stone</strong>. In B. Coecke,
+editor, New Structures for Physics, pages 95–172. Springer Lecture Notes on Physics
+(813), 2011. <a href="RosettaStone.pdf"> (pdf) </a> 
+</li>
+S. Abramsky and N. Tzevelekos. <strong> Introduction to categories and categorical logic</strong>. In B. Coecke,
+editor, New Structures for Physics, pages 3–94. Springer Lecture Notes on Physics
+(813), 2011.
+<a href="CategoriesAndLogic.pdf"> (pdf) </a> 
+</li>
+</ul>
+
+<h5> Research blogs </h5>
+<ul>
+<li><a href="https://ncatlab.org/nlab/show/HomePage">nLab</a> -- A wiki-lab for collaborative work on Mathematics, Physics and Philosophy in so far as these subjects are usefully treated with tools and notions of category theory.
+</li>
+<li><a href="https://graphicallinearalgebra.net/">Graphical Linear Algebra</a> -- Pawel Sobocinski's blog on rediscovering linear algebra in a compositional way, with string-diagrams. 
+</li>
+<li><a href="https://golem.ph.utexas.edu/category/">The n-Category Café</a> -- A group blog on math, physics and philosophy.
+</li>
+</ul>
+
+<h5> Links </h5>  
+<ul>
+<li>The  
+<a href="https://zxcalculus.com/">ZX-calculus</a> webpage</li>
+<li>The  
+<a href="https://inl.int/quantum-materials/quantum-and-linear-optical-computation/">Quantum and Linear-Optical Computation Group</a>
+at <a href="https://inl.int">INL</a> </li>
+<li><a href="http://arca.di.uminho.pt">Arca website</a> at  <a href="https://www.inesctec.pt/en">INESC TEC</a> </li>
+</ul>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="funcionamento"></div>
+<h2>Pragmatics</h2>
+
+
+<h5><a name="Docente"></a> Lecturers </h5>
+<ul>
+  <li><a href="http://www.di.uminho.pt/~lsb">Luís Soares Barbosa</a></li>
+  <li><a href="https://vegf17.github.io/">Vitor Fernandes</a></li>
+</ul>
+
+<h5><a name="Avaliação"></a> Assessment </h5>
+
+<ul>
+<li>  T: 6 take-home exercises  (50%): 1 (Ex 10, Lec 2); 2 (Ex 14 & 14, Lec 2); 3 (Ex 8 & 9, Lec 5); 4 (Ex 12 & 13, Lec 6); 5 (Ex 15 & 17, Lec 7; 6 (two chosen from Lec 8)
+<li> TP: Individual project resorting to ZX and PyZX (50%)
+
+</ul>
+
+<h5><a name="Class"></a> Grades </h5>
+
+Final grades <a href="LQ-CLASS-2425.pdf"> published here </a> 
+
+
+<!--
+<li> Fianl grades <a href="Class23-24.pdf"> (here) </a> 
+<a href="QL-Exer1-2023-24.pdf"> (pdf)</a>
+
+<ul>
+<li> (40%) Individual resolution of 6 take-home exercises along the semester (3 per each module)
+    <ul> 
+<li>Module 1: Exercise 3: due <b>...</b></li>
+<li>Module 2: Exercises 1 and 2 <a href="LQ2324-Exercicios.pdf"> (pdf) </a> : due <b>13 June</b></li>
+</ul>
+  <P>
+<li> (60%) Written essay (1 per each module)
+    <ul> 
+<li>Module 1: Written essay: due <b> 22 March</b></li>
+<li>Module 2: Written essay: exercise on ZX and PyZX: due <b> 13 June</b></li>
+</ul>
+</ul>
+-->
+
+<h5><a name="Contacto"></a> Contacts </h5>
+
+<ul>
+  <li> Lectures: T - Friday, 13-15 (Building 1, 1.22)| TP Wednsday 09-11 (Building 1, 2.14)
+  <li> Appointments (Luís): Wed, 18:00-20:00 (please send an email the day before) 
+  <li> Email: lsb arroba di ponto uminho ponto pt
+  <li> Appointments (Vitor): Wed, 16:00-18:00 (please send an email the day before) 
+  <li> Email:  d8365 arroba uminho ponto pt
+  <li> Last update: 2025.06.19
+</ul>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+</div> <!-- bs-component -->
+</div> <!-- container -->
+
+<!-- FOOTERS -->
+
+<div class="panel-footer" id="wrapper-footer">
+<div id="footer">
+2025.06.19              
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="extra/js/bootstrap.min.js"></script>
+<!-- <script src="../assets/js/bootswatch.js"></script> -->
+
+<script>
+
+  $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+  });
+  
+  // post-process the tweeter feed.
+  (function ($) {
+    window.setTimeout(function(){
+      $(".twitter-timeline").contents().find(".e-entry-title").attr("style", "color: #666666; font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;");
+    }, 1000);
+
+  })(jQuery);
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quantum Logic 2021-2022</title>    
+
+  <meta name="description" content="QL 20/21 website">
+  <meta name="keywords" content="Quantum computing, process calculi, Logic">
+  <meta name="author" content="Luís Soares Barbosa" >
+<!--  <base href="http://ac1516.proenca.org/" target="_parent" /> -->
+  
+<!--  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+  <link href="extra/css/bootstrap-bw.min.css" rel="stylesheet" media="screen">
+  <link href="extra/css/main.css" rel="stylesheet">
+
+  <!-- see more examples in http://bootswatch.com/paper/# -->
+</head>
+
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top"> <!-- navbar-fixed-top -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+<!--     AC -->
+    </a>
+  </div>
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav" id="myTab">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#programa">Syllabus</a></li>
+      <li><a href="#material">Support</a></li>
+      <li><a href="#funcionamento">Pragmatics</a></li>
+    </ul>
+  </div>
+</div>
+
+
+ 
+<div class="splash">
+  <h2 class="splash-title">Quantum Logic (2021-22)</h2>
+<!--  <div class="blue-rect"> 
+-->
+  <h4 class="splash-subtitle">MIEFis - MSc in Physics Engineering </h4>
+  <h4 class="splash-subtitle"> Dep. Informática, Universidade do Minho</h4>
+  </div>
+
+
+<div id="myTabContent" class="container">
+<div class="bs-component">
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>List of Research Exercises</h2>
+
+<p>
+
+<p>
+The research exercise aims at exploring themes and topics related to the course contents, but not formally covered during the lectures. The exercise is expected to produce two deliverables which will be jointly assessed:
+<ul>
+  <li> 
+ A tutorial on the theme proposed whose objective is to present, in a clear and rigorous way, its kernel concepts / results / questions to an informed audience (i.e. one that has attended the lectures of the course) but with no specific knowledge of the topics addressed. This tutorial will be delivered to the whole class in a 45 min slot. It may be supported by slides, lecture notes, or given entirely on the whiteboard. Each group will freely choose the presentation style that better fits the objective. No written document is mandatory.
+  <li> 
+ A report (up to 15 pages), written in a clear and concise way, on a specific question given in the description of each theme.
+</ul>
+</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+<div id="material"></div>
+<h2>Themes</h2>
+
+<h5> T1: The ZX calculus and PyZX</h5>
+<P>The ZX calculus is a diagramatic notation equipped with a set of rewrite rules for a sort of string diagrams 
+called ZX-diagrams. Basically, they allow to represent arbitrary linear maps between qubits. Access to documentation and tools is available 
+<a href="https://github.com/Quantomatic">here</a>. Additional information can be found in 
+
+<ul>
+<li>
+  B. Coecke and A. Kissinger. <em> Picturing Quantum Processes: A First Course in Quantum
+Theory and Diagrammatic Reasoning </em>. Cambridge University Press, 2017 (basically, chapter 9).
+</li>
+</ul>
+and papers
+<ul>
+<li>
+  A. Kissinger, J. van Wetering. <em> PyZX: Large Scale Automated Diagrammatic Reasoning</em>, 2017 
+  (available <a href="https://arxiv.org/abs/1904.04735v2"> here </a>).
+</li>
+<li>
+  J. van Wetering. <em> ZX-calculus for the working quantum computer scientist</em>, 2020
+  (available <a href="https://arxiv.org/abs/2012.13966"> here </a>).
+</li>
+<li>
+  B. Coecke, D. Horsman, A. Kissinger, Q. Wang. <em>Kindergarden quantum mechanics graduates (...or how I learned to stop gluing LEGO together and love the ZX-calculus)
+</em>, 2021 
+  (available <a href="https://arxiv.org/abs/2102.10984"> here </a>).
+</li>
+</ul>
+
+
+The report is expected to focus on tool support for the ZX calculus, namely 
+<a href="https://pyzx.readthedocs.io/en/latest/"> PyZX </a>, and illustrate its use in algorithmic design. We suggest using the Grover algorithm and its variants for illustration.
+ <br /> 
+<br /> 
+
+<h5> T2: Modelling and analysing QKD  in the ZX calculus</h5>
+<P>The ZX calculus is a diagramatic notation equipped with a set of rewrite rules for a sort of string diagrams called ZX-diagrams. See the description of T1 for access to suitable information and the PyZX tool.
+
+ This project aims at exploring the ZX calculus and PyZX to model and analyse the QKD (quantum key distribution) protocol, a basic ingredient in quantum cryptography. See the
+ <a href="https://www.etsi.org/images/files/ETSIWhitePapers/QuantumSafeWhitepaper.pdf"> quantum safe whitepaper </a>
+ for context information and  the 
+ <a href="https://qiskit.org/textbook/ch-algorithms/quantum-key-distribution.html"> Qiskit implementation of QKD</a>.
+  As a starting  point  for the project, take the paper
+
+<ul>
+<li>
+  A. Kissinger, S. Tull, and B. Westerbaan <em> Picture-perfect Quantum Key Distribution </em>, 2017
+  (available <a href="https://arxiv.org/abs/1704.08668"> here </a>).
+</li>
+</ul>
+
+The report is expected to focus on the use of 
+<a href="https://pyzx.readthedocs.io/en/latest/"> PyZX </a> to model the QKD protocol. A brief introduction to QKD and its relevance is also expected.
+ <br /> 
+<br /> 
+
+<h5> T3: Modelling and analysing quantum walks in the ZX calculus</h5>
+<P>The ZX calculus is a diagramatic notation equipped with a set of rewrite rules for a sort of string diagrams called ZX-diagrams. See the description of T1 for access to suitable information and the PyZX tool.
+<P>
+ This project aims at exploring the ZX calculus and PyZX to model and analyse quantum walks. Please recall the lecture on this topic by <a href="https://qwchagas.github.io/">Dr Bruno Chagas</a> [<a href="https://davinci.di.uminho.pt/springschool22/">slides</a>].
+  As a starting  point  for the project, take the  <a href="https://arxiv.org/abs/1904.04735v2"> ZX tutorials </a>  and 
+ <a href="S21.pdf"> Jaime Santos MSc dissertation</a>. The challenge is to choose from there one or two types of quantum walks and express the corresponding algorithms in ZX.
+
+ The report should detail one of those models and study it with <a href="https://pyzx.readthedocs.io/en/latest/"> PyZX</a>.
+ <br /> 
+<br /> 
+
+<h5> T4: Measurement-based quantum computation in the ZX calculus</h5>
+<P>Specifying algorithms within the measurement-based quantum computation paradigm (see
+  <a href="https://doi.org/10.1093/acrefore/9780190871994.013.31"> this</a> paper and the references there in
+  for an introduction), 
+  was one of the original motivations for the <a href="https://arxiv.org/abs/2012.13966"> ZX calculus</a>.
+  This project aims at reviweing this topic from the relevant literature, taking as a starting point the following paper:
+
+  <ul>
+<li>
+  R. Duncan, <em> A graphical approach to measurement-based quantum computing </em>, 2012
+  (available <a href="https://arxiv.org/abs/1203.6242"> here </a>).
+</li>
+</ul>
+
+  The report should discuss in detail a concrete case/example, possibly resorting to  
+  <a href="https://pyzx.readthedocs.io/en/latest/"> PyZX</a>.
+ <br /> 
+<br /> 
+
+<h5> T5: Circuit optimization in the ZX calculus</h5>
+One of the target applications of the <a href="https://arxiv.org/abs/2012.13966"> ZX calculus</a> is circuit optimization. The following papers are examples of this research thread:
+
+<ul>
+<li>
+  Lia Yeh, Emma Dasgupta, Erick Winston, <em> Benchmarking ZX-Calculus Circuit Optimization Against Qiskit Transpilation</em>. 2020
+  (available <a href="https://src.acm.org/binaries/content/assets/src/2020/lia-yeh.pdf"> here</a>).
+</li>
+<li>
+  Michael Hanks et al, <em>Effective Compression of Quantum Braided Circuits Aided by ZX-Calculus</em>. 2020
+  (available <a href="https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.041030"> here</a>).
+</li>
+<li>
+  A. Kissinger, J. Wetering, <em>Reducing T-count with the ZX-calculus</em>. 2020
+  (available <a href="https://arxiv.org/abs/1903.10477"> here</a>).
+</li>
+<li>
+  A. Kissinger, J. Wetering,  <em> Simulating quantum circuits with ZX-calculus reduced stabiliser
+decompositions</em>. 2022
+  (available <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ac5d20/pdf"> here</a>).
+</li>
+</ul>
+
+The report should give an overview of the area and explore in detail one of these papers.
+ <br /> 
+<br /> 
+
+<h5> T6: Automata in string diagrams</h5>
+The aim of this project is to explore the use of string diagrams to specify (classical) finite automata, starting from the following paper:
+
+<ul>
+<li>
+  R. Piedeleu, F. Zanasi, <em> A String Diagrammatic Axiomatisation of Finite-State Automata</em>. 2020
+  (available <a href="https://arxiv.org/abs/2009.14576"> here</a>).
+</li>
+</ul>
+
+If time allows, in the report you may discuss how quantum atomata (as introduced <a href="https://www.researchgate.net/publication/221351451_Quantum_Automata_Theory_-_A_Review"> here</a>) may be captured in a similar way.
+
+ <br /> 
+<br /> 
+
+
+<h5> T7: Diagramatic reasoning in categories</h5>
+
+The objective of this project is twofold: to further explore two new topics in category theory (adjunctions and monads), and to study a graphical language --- a variant of string diagrams --- to reason about them. Although the focus of the project is placed on the topics covered in the course first module, the use of a graphical language bridges to the second one.
+
+<P>
+The basic reference for this study, and the preparation of the tutorial, is the following paper:
+
+<ul>
+<li>Dan Mardsen. <em> Category Theory Using String Diagrams</em>, 2014 (available <a href="https://arxiv.org/abs/1401.7220"> here</a>)
+</li>
+</ul>
+
+The tutorial shall present the graphical approach to categories and relate it the the study of string diagrms made in the lectures.
+
+<P>
+  For the report, the group is expected to discuss the concepts of adjunction and monad, provide examples and illustrate the proof of some related results with the approach discussed in the above-mentioned paper. The group may like to refer to the following notes on <a href="LQ-Adjunctions.pdf"> adjunctions </a>
+and <a href="LQ-Monads.pdf"> monads </a> and work through some of the exercises proposed.
+ <br /> 
+<br /> 
+
+
+
+
+
+<h5> T8: Certification of quantum programs with a quantum lambda-calculus</h5>
+
+This project, related to the third module of course, aims at exploring quantum lambda-calculus as a basis for  certification of quantum software. Certification, i.e. compliance to the specified behaviour, is a fundamental goal for the sotware engineering.
+
+The tutorial should present Selinger and Valiron's version of a quantum lambda calculus with classical control. The basic reference is
+
+<ul>
+<li>
+  P. Selinger and B. Valiron. <em> Quantum Lambda Calculus </em>. 2004 (available <a href="https://www.mscs.dal.ca/~selinger/papers/qlambdabook.pdf"> here</a>). 
+</ul>
+</li>
+
+The report is expected to discuss certification and its relation to the quantum lambda calculus, starting from the following paper
+
+<ul>
+<li>
+  C. Chareton et all. <em> Toward Certified Quantum programming </em>. 2019 (available <a href="https://www.researchgate.net/publication/339898581_Toward_certified_quantum_programming/link/5e9d6ccd299bf13079aa571c/download"> here</a>).
+</ul>
+</li>
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~-->
+</div> <!-- bs-component -->
+</div> <!-- container -->
+
+<!-- FOOTERS -->
+
+<div class="panel-footer" id="wrapper-footer">
+<div id="footer">
+2022.05.12
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="extra/js/bootstrap.min.js"></script>
+<!-- <script src="../assets/js/bootswatch.js"></script> -->
+
+<script>
+
+  $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+  });
+  
+  // post-process the tweeter feed.
+  (function ($) {
+    window.setTimeout(function(){
+      $(".twitter-timeline").contents().find(".e-entry-title").attr("style", "color: #666666; font-family: 'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;");
+    }, 1000);
+
+  })(jQuery);
+
+</script>
+
+</body>
+</html>
+
